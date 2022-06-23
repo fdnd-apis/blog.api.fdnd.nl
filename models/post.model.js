@@ -12,6 +12,7 @@ const post = function (post) {
   this.author = post.author
   this.title = post.title
   this.content = post.content
+  this.image = post.image
   this.published = post.published
 }
 
