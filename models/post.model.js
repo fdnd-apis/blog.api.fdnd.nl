@@ -43,7 +43,7 @@ post.getById = async function (postId) {
   const rows = await db.query(`SELECT * FROM post WHERE postId = ?`, [postId])
   return {
     data: helper.emptyOrRows(rows),
-    meta: { page },
+    meta: {},
   }
 }
 
